@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formualire</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    body{
+      background-color: rgb(40,40,40);
+    }
+    #form-container{
+      background-color: rgb(150,150,150);
+      margin-top: 50px;
+      padding: 40px;
+      border-radius: 15px;
+    }
+    /*div {
+      padding: 15px;
+    }*/
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div id="form-container">
+
+      <form action="traitement.php" method="post">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre"class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="largeur">Largeur</label>
+          <input type="text" id="largeur" name="largeur" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="hauteur">Hauteur</label>
+          <input type="text" id="hauteur" name="hauteur" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="couleur">Couleur</label>
+          <select name="couleur" id="couleur" class="form-control">
+            <option value="red">Rouge</option>
+            <option value="orange">Orange</option>
+            <option value="blue">Bleu</option>
+            <option value="green">Vert</option>
+            <option value="purple">Violet</option>
+            <option value="random">Aléatoire</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-default btn-primary btn-lg">Générer</button>
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+  <script src="main.js" type="text/javascript"></script>
+</body>
+</html>
